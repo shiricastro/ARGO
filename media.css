@@ -1,0 +1,10 @@
+@media(max-width: 784px){
+	.aboutButtonImg img:first-child,
+	.aboutButtonImg:first-child{
+		max-height: 100%;
+	}
+	.aboutButtonImg img,
+	.aboutButtonImg{
+   		max-width:100%;
+}
+}

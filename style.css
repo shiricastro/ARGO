@@ -170,17 +170,7 @@ header{
 }
 
 /***gallery***/
-/*.newCollectionContainer{
-	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-start;
-	justify-content: center;
-}
-.newCollectionContainer img{
-	max-width: 300px;
-    width: 95%;
-    margin: .5rem;
-}*/
+
 .item{
 	display: flex;
     flex-direction: column;
@@ -189,19 +179,68 @@ header{
     max-width: 300px;
 }
 
-.newCollectionContainer{
+.suitsContainer{
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
 	padding-bottom: 1rem;
 }
-.newCollectionContainer img{
+.suitsContainer img{
 	max-width: 300px;
     width: 95%;
     margin: .3rem auto;
     cursor: pointer;    
 }
-.newCollectionContainer img:hover,
-.newCollectionContainer img:focus{
+.suitsContainer img:hover,
+.suitsContainer img:focus{
 	opacity: .8;
+}
+.shoesContainer{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+.shoesContainer img{
+	max-width: 300px;
+    height: 200px;
+    width: 95%;
+    margin: 1rem;
+}
+
+/***contact***/
+.contactInfo li{
+	list-style: none;
+	text-align: left;
+	padding: .2rem;
+}
+.contactInfo li:last-child{
+	padding-top: .5rem;
+}
+.contactInfo li:last-child a:last-child img{
+	width: 30px;
+	margin: 1.5px 3px;
+}
+.contactInfo li:last-child a img{
+	width: 35px;
+}
+.contactInfo li:last-child a:hover,
+.contactInfo li:last-child a:focus{
+	opacity: .8;
+}
+.contactIcon img{
+	width: 15px;
+	vertical-align: sub;
+	margin-right: 1rem;
+}
+.contactContainer{
+	padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+.contactContainer iframe{
+	border: 0;
+    width: 95%;
+    max-width: 400px;
+    margin-top:1rem;
 }

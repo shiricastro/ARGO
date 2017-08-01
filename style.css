@@ -7,8 +7,8 @@ body{
 	font-family: 'Catamaran', sans-serif;
 }
 header{
-	padding-top: 3rem;
-	padding-bottom:3rem;
+	padding-top: 2rem;
+	padding-bottom:2rem;
 }
 .mainContainer{
 	width: 90%;
@@ -86,11 +86,6 @@ header{
 .wrap{
 	display: flex;
     flex-direction: column;
-
-}
-.aboutButtonImg img,
-.aboutButtonImg {
-	//max-width: 345px;
 }
 
 .aboutButtonImg span{
@@ -108,4 +103,68 @@ header{
 .aboutButtonImg:focus{
 	opacity:.8;
 	outline: none;
+}
+.aboutGalleryContainer h3,
+.aboutArticlesContainer h3{
+	margin-top: 2rem;
+}
+.articlesContainer{
+	display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+.article{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 1rem;
+	justify-content: center;
+}
+.article:first-child{
+	margin-top:0;
+}
+.article img{
+	align-self: flex-start;
+}
+.article img:hover,
+.article img:active{
+	opacity:.8;
+}
+.articleDiscription{
+    max-width: 630px;
+    width: 70%;
+    text-align: left;
+    margin-left: 2rem;
+    font-size: .9rem;
+}
+.articleDiscription a{
+	text-decoration: none;
+	color:black;
+	font-weight: bold;
+}
+.articleDiscription a:hover,
+.articleDiscription a:focus{
+	text-decoration: underline;
+}
+.articleDiscription p{
+	margin:0;
+}
+.allArticles a{
+	background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: .4rem .8rem;
+    border-radius: 5px;
+    font-size: .9rem;
+    opacity: .8;	
+}
+.allArticles a:hover,
+.allArticles a:active{
+	opacity: 1;
+}
+.allArticles{
+    margin-top: .5rem;
+    text-align: right;
+    width: 90%;
 }

@@ -168,3 +168,40 @@ header{
     text-align: right;
     width: 90%;
 }
+
+/***gallery***/
+/*.newCollectionContainer{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: center;
+}
+.newCollectionContainer img{
+	max-width: 300px;
+    width: 95%;
+    margin: .5rem;
+}*/
+.item{
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    max-width: 300px;
+}
+
+.newCollectionContainer{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding-bottom: 1rem;
+}
+.newCollectionContainer img{
+	max-width: 300px;
+    width: 95%;
+    margin: .3rem auto;
+    cursor: pointer;    
+}
+.newCollectionContainer img:hover,
+.newCollectionContainer img:focus{
+	opacity: .8;
+}

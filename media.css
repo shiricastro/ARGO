@@ -74,4 +74,14 @@
 	.allArticles a{
     	font-size: .8rem;	
 	}
+	#leftButton,
+	#rightButton{	
+		width: 20px;
+	    height: 40px;
+	    font-size: 1rem;
+	    padding: 0;
+	}
+	#deletButton{
+		font-size: .5rem;
+	}
 }

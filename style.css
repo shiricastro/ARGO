@@ -18,6 +18,14 @@ footer{
     max-width: 1000px;
     font-size: .7rem;
 }
+button{
+	cursor: pointer;
+}
+button:hover,
+button:focus{
+	outline: none;	
+}
+
 .mainContainer{
 	width: 90%;
 	max-width:1000px;
@@ -51,8 +59,7 @@ footer{
     font-size: 1rem;
     padding: .3rem 1rem;
     background-color: #333;
-    color:white;
-	cursor: pointer;	
+    color:white;	
 }
 .navButton:hover ,
 .suitsNavButton:hover{
@@ -111,7 +118,6 @@ footer{
 	border: 0;
     padding: 0;
     position: relative;
-    cursor: pointer;
     opacity: 1;
     display: flex;
     margin: .3rem;
@@ -229,7 +235,9 @@ footer{
     cursor: pointer;    
 }
 .suitsContainer img:hover,
-.suitsContainer img:focus{
+.suitsContainer img:focus,
+.shoesContainer img:hover,
+.shoesContainer img:focus{
 	opacity: .8;
 }
 .shoesContainer{
@@ -243,7 +251,9 @@ footer{
     height: 200px;
     width: 95%;
     margin: 1rem;
+    cursor: pointer;
 }
+
 
 /***contact***/
 .contactInfo li{
@@ -281,4 +291,59 @@ footer{
     width: 95%;
     max-width: 400px;
     margin-top:1rem;
+}
+
+/***popUp container***/
+#popSlide{
+    position: fixed;
+    top: 0;left: 0;right: 0;bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.75);
+    z-index:5000;
+}
+#popContainer{
+	max-width: 80%;
+	position: relative;
+}
+#popContainer button{
+	display: none;
+	position: absolute;	
+	border:none;
+	font-weight: bold;
+	opacity:.6;
+	background-color:black;
+	color:white;
+}
+#popContainer:hover button,
+#popContainer:focus button{
+	display: block;
+}
+
+#popContainer button:hover,
+#popContainer button:active{
+	opacity:.8;
+}
+#imgCont img{
+	max-width: 800px;
+    width: 100%;
+}
+#leftButton{
+	top:43%;
+	left: 0;
+}
+#rightButton{
+	top:43%;
+	right:0;
+}
+#deletButton{
+	top:0;
+	right:0;
+}
+#leftButton,
+#rightButton{	
+	color:white;
+	font-size: 2rem;
+    padding: 7px 12px;
 }

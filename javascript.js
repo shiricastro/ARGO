@@ -22,17 +22,21 @@ function homeGallery(){
 	$('.aboutButtonImg').on('click',function(e){
 		var data = $(e.currentTarget).attr('data-name');
 		showContant(data);	
+			
 	});	
 }
 
 /***ajax***/
-function showContant(text){
-	$('.container').html();
-	$.get(''+ text+ ".html"+'',function(data){
-		$('.container').html(data);
-		if (text === 'home'){
+function showContant(name){
+	$('.container').css({"display":"none"});
+	$('.container').html();	
+	$('.container').fadeIn(1000);
+	$.get(''+ name+ ".html"+'',function(data){
+		$('.container').html(data);				
+		if (name === 'home'){
 			homeGallery();
 		}
-	});
+
+	});	
 }
 

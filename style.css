@@ -10,6 +10,14 @@ header{
 	padding-top: 2rem;
 	padding-bottom:2rem;
 }
+footer{
+	margin: 0 auto;
+    background-color: black;
+    color: white;
+    width: 90%;
+    max-width: 1000px;
+    font-size: .7rem;
+}
 .mainContainer{
 	width: 90%;
 	max-width:1000px;
@@ -22,14 +30,14 @@ header{
 .nav{
 	padding:0;
 	margin-top: 0;
+	margin-bottom: 0;
 	display: flex;
 	justify-content: center;
 	background-color: #333;
 }
 .nav li{
 	list-style: none;
-	border-right: 1px solid lightgray;
-	
+	border-right: 1px solid lightgray;	
 }
 .nav li:last-child{
 	border-right: none;
@@ -41,16 +49,42 @@ header{
     padding: .3rem 1rem;
     background-color: #333;
     color:white;
+	cursor: pointer;	
 }
-.navButton:hover {
+.navButton:hover ,
+.suitsNavButton:hover{
     background-color: #111; 
     
 }
-.navButton:focus {
+.navButton:focus,
+.suitsNavButton:focus {
     background-color: #111; 
     outline: none;
 }
-
+.activSelect{
+	display: none;
+}
+.suitsSelect{
+	max-width: 190px;
+    margin: 0 auto;
+    padding-left: 2.6rem;
+}
+.suitsSelect ul{
+	margin: 0;
+    padding: 0;
+}
+.suitsSelect ul li{
+	list-style: none;
+    width: 136px;
+}
+.suitsNavButton{
+	border: none;
+    text-align: left;
+    padding: .4rem 1rem;
+    background-color: #333;
+    color: white;
+	width: 100%;
+}
 /***home***/
 
 .about{

@@ -8,8 +8,8 @@
 	    align-items: flex-start;
 	}
 	.suitsContainer .item:last-child img{
-		    margin: .3rem .5rem;
-		        max-width: 285px;
+		margin: .3rem .5rem;
+		max-width: 285px;
 	}
 }
 
@@ -56,6 +56,13 @@
 	}
 	h1{
 		font-size:1.5rem;
+	}
+	.navButton{
+    	font-size: .8rem;
+    	padding: .3rem .7rem;
+	}
+	.suitsNavButton{
+		font-size: .7rem;
 	}
 	.aboutParagraph{
 		font-size:.8rem;

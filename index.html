@@ -15,15 +15,21 @@
 	<div class="mainContainer">
 		<nav>
 			<ul class="nav">
-			  <li><button class="navButton">Home</button></li>
-			  <li><button class="navButton">Suits</button></li>
-			  <li><button class="navButton">Shoes</button></li>
-			  <li><button class="navButton">Contact</button></li>
-			</ul>	
+			  <li><button class="navButton" data-name="home">Home</button></li>
+			  <li><button class="navButton selectGallery">Suits</button></li>
+			  <li><button class="navButton" data-name="shoes">Shoes</button></li>
+			  <li><button class="navButton" data-name="contact">Contact</button></li>
+			</ul>
 		</nav>
+		<div class="suitsSelect activSelect">
+			<ul>
+				<li><button class="suitsNavButton" data-name="newCollection">New Collection</button></li>
+				<li><button class="suitsNavButton" data-name="argoSuits">Argo Suits</button></li>
+			</ul>
+		</div>
 		<div class="container"></div>		
 	</div>
-	<footer>&copy; Shiri Sastro</footer>
+	<footer>&copy; Shiri Castro</footer>
 <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 <script src="javascript.js"></script>
 </body>

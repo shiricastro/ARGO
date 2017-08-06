@@ -4,6 +4,7 @@ $('.selectGallery').on('click',function(e){
 	$('.suitsSelect').toggleClass('activSelect');
 });
 $('.suitsSelect').on('click',function(e){
+	$('.selectGallery').addClass('activSuits');
 	$('.suitsSelect').toggleClass('activSelect');
 	var data = $(e.target).attr('data-name');
 	showContant(data);
@@ -12,17 +13,17 @@ $('.suitsSelect').on('click',function(e){
 showContant("home");
 /*** Navs ***/
 $("nav li button:not('.selectGallery')").on('click',function(e){
+	$('.selectGallery').removeClass('activSuits');
 	var data = $(e.target).attr('data-name');
 	showContant(data);	
 });
 
 /***home page buttons***/
 
-function homeGallery(){
+function homeGallery(){	
 	$('.aboutButtonImg').on('click',function(e){
 		var data = $(e.currentTarget).attr('data-name');
-		showContant(data);	
-			
+		showContant(data);				
 	});	
 }
 
@@ -34,8 +35,10 @@ function showContant(name){
 	$.get(''+ name+ ".html"+'',function(data){
 		$('.container').html(data);				
 		if (name === 'home'){
+			$('.navButtonHome').addClass('activHome');
 			homeGallery();
 		}else if(name === 'newCollection' || name === 'argoSuits' || name === 'shoes'){
+			$('.navButtonHome').removeClass('activHome');
 			slideImg();
 		}
 
@@ -43,7 +46,9 @@ function showContant(name){
 }
 /***add slide***/
 var slideIndex = 1;
+
 function slideImg(){
+
 	var imgArray = $('.item img');
 	imgArray.on('click',function(e){
 		gallerySlide(e.target,imgArray);

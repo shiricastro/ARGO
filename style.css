@@ -63,14 +63,18 @@ button:focus{
 }
 .navButton:hover ,
 .suitsNavButton:hover{
-    background-color: #111; 
-    
+    background-color: #111;     
 }
 .navButton:focus,
 .suitsNavButton:focus {
     background-color: #111; 
     outline: none;
 }
+.activHome,
+.activSuits{
+	background-color: #111; 
+}
+
 .activSelect{
 	display: none;
 }
